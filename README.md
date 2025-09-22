@@ -7,4 +7,4 @@ This subclass exposes one extra static property (getter), a symbol, and one extr
 
 This is done so that you can drop it into a Map class, yet still install an object proxy listener to it. Example usage: `mirroredMap.mirror = new Proxy(mirroredMap.mirror, handlerObject);`. This will install your handler so that it calls it instead of the internal one. Clearly you will need call the previous proxy and such until you hit the internal one. See the Reflect API (I think, I'm still teaching myself JS).
 
-I specifically made this after I realized why Observable-Slim wasn't working for my project and it should in fact make maps compatible with that library.
+I specifically made this after I realized why Observable-Slim wasn't working for my project and I now realize this should in fact make maps compatible with that library. (I'll probably write my own now for fun.)
